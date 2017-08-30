@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class PrintingOutText {
+    
+   
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+        System.out.println("How many times the text should be printed? ");
+        int x = Integer.parseInt(in.nextLine());
+        
+        int times = 0;
+        
+        while(times < x){
+            printText();
+            times++;
+        }
+    }
+    
+     public static void printText(){
+        System.out.println("In the beginning there were the swamp, the hoe and Java.");
+    }
+    
+   
+}
